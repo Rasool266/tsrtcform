@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS RTC LOGIN FORM </title>
+</head>
+<body>
+    <center>
+    <fieldset>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.gZoQG2FhMBDoEBl2yhee3gHaEK&pid=Api&P=0&h=180" alt="" width="170">
+        
+        <h1 style="color: blue;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+                <h2>GENERAL BUS PASS APPLICATIION</h2>
+    </fieldset>
+    <form action="" method="post">
+        <fieldset>
+            <legend style="color: blue; border-radius: 5px;">APPLICATION DETAILS</legend>
+            <label for="name">Name*</label>
+             <input type="text" id="name" name="name"pattern="{1,20}" required><br>
+                    (max 20 characters) <br><br>
+              <label for="Father's Guardian's Name">Father's Guardian's Name*</label>
+            <input type="text" id="father's Guardian's " name="fathername" required><br><br>
+            <label for="dateofbirth">DATE OF BIRTH*</label>
+            <input type="date" id="dateofbirth" name="dateofbirth" required>
+            <p>gender*</p>
+            <label for="male">MALE</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="FEMALE">FEMALE</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+            <label for="age">AGE AS ON*:</label>
+            <input type="number" placeholder="Years" style="width:5%" min="0">
+          <input type="number" placeholder="Months" style="width:5%" min="0">
+          <input type="number" placeholder="Days" style="width:5%" min="0">
+            <br><br>
+                <label for="aadhaar">AADHAAR NO*:</label>
+                <input type="text" id="aadhaar" name="aadhaar"><br><br>
+                <label for="whatsapp">WHATSAPP NO*</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required><br><br>
+                <label for="E-mail">E-mail*</label>
+                <input type="email" id="E-mail" name="E-mail"pattern="[a-zA-z0-9 .@]+" required><br><br>
+                <label for="photo">image*</label>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend style="color: blue;">RESIDENTIAL ADRESS DETAILS</legend>
+
+            <label for ="textarea">Application address</label>
+            <textarea id="textarea" rows="3" cols="20" name="description"></textarea><br><br>
+            <label for="dropdown">District</label>
+             <select id="dropdown" name="dropdown" placeholder="select" required>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Khammam">Khammam</option>
+                <option value="Nalgonda">Nalgonda</option>
+                <option value="Mahabubnagar">Mahabubnagar</option>
+                <option value="Rangareddy">Rangareddy</option> <br><br>
+                </select>
+            <label for="dropdown">Mandal</label>
+               <select id="dropdown" name="dropdown" placeholder="select" required>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Khammam">Khammam</option>
+                <option value="Nalgonda">Nalgonda</option>
+                <option value="Mahabubnagar">Mahabubnagar</option>
+                <option value="Rangareddy">Rangareddy</option> <br><br>
+                </select><br><br>
+                <label for="dropdown">Village*</label>
+               <select id="dropdown" name="dropdown" placeholder="select" required>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Khammam">Khammam</option>
+                <option value="Nalgonda">Nalgonda</option>
+                <option value="Mahabubnagar">Mahabubnagar</option>
+                <option value="Rangareddy">Rangareddy</option> <br><br>
+                </select>
+              <label for="pincode">pincode*</label>
+              <input type="text" id="pincode" name="pincode" required><br><br>
+              
+        </fieldset>
+        <fieldset>
+             <legend style="color: blue;">PASS TYPE DETAILS </legend>
+             <label for="dropdown">city*</label>
+               <select id="dropdown" name="dropdown">
+               <option value="Hyderabad">Hyderabad</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Khammam">Khammam</option>
+                <option value="Nalgonda">Nalgonda</option>
+                <option value="Mahabubnagar">Mahabubnagar</option>
+                <option value="Rangareddy">Rangareddy</option> <br><br>
+                </select><br><br>
+                <label for="dropdown">passtype*</label>
+                 <select id="dropdown" name="dropdown">
+                    <option value="buspass">bus pass</option>
+                    <option value="trainpass">train pass</option>
+                    <option value="metropass">metro pass</option>
+                    <option value="metro express pass">metro express pass</option>
+                    </select>
+        </fieldset>
+        <fieldset>
+            <legend style="color:blue ;">METHOD OF PAYMENT&PASS COLLECTION</legend>
+            <label for="dropdown">payment*</label>
+               <select id="dropdown" name="dropdown">
+               <option value="online">online</option>
+                <option value="offline">offline</option>
+                </select>
+                <label for="dropdown">pass collection*</label>
+                 <select id="dropdown" name="dropdown">
+                    <option value="home delivery">home delivery</option>
+                    <option value="self pickup">self pickup</option>
+                    </select><br><br>
+                    <label for="dropdown" >Center at which
+                    you want to Collect Pass *</label>
+                    <select id="dropdown" name="dropdown" palceholder="select" required>
+                    <option value="rtc stop at kphb">rtc stop at kphb</option>
+                    <option value="rtc stop at bhel">rtc stop at bhel</option>
+                    <option value="rtc stop at madhapur">rtc stop at madhapur</option>
+                    <option value="rtc stop at ammerpet">rtc stop at ammerpet</option>
+                    <option value="rtc stop at sr nagar">rtc stop at sr nagar</option>
+                    <option value="rtc stop at kukatpalli">rtc stop at kukatpalli</option>
+                    <option value="rtc stop at mgbs">rtc stop at mgbs</option>
+                    <option value="rtc stop at jubli hills">rtc stop at jubli hills</option>
+                    <option value="rtc stop at esi">rtc stop at esi</option>
+                    <option value="rtc stop at lb nagar">rtc stop at lb nagar</option>
+                    </select><br><br>
+        </fieldset>             
+        </fieldset>             
+             </form>
+             <img src="https://tse1.mm.bing.net/th?id=OIP.e-FmeUfoSRQZ-uuZKeMsOwHaCQ&pid=Api&P=0&h=180" alt=""height="100" width="170"><br>
+             <label for="text"></label>
+             <input type="text" id="text" name="text"><br><br>
+             <label for="submit"></label>
+             <input type="submit"id="submit" name="submit"value="submit"><br><br>
+
+</center>
+
+</body>
+</html>
